@@ -1,0 +1,21 @@
+type: executable
+target: example_c13dof
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    c13dof.c
+    main.c
+}
+
+headers: {
+    c13dof.h
+}
+
+
+

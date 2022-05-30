@@ -1,0 +1,17 @@
+:: Base project template
+
+:: project: example_hello_world
+target: example_hello_world
+
+type: executable
+
+sources: {
+    main.c
+}
+
+depends: {
+    MikroSDK.Board
+    MikroSDK.Driver
+    MikroC.Core
+    MikroSDK.Log
+}

@@ -1,0 +1,19 @@
+:: Base project template
+
+:: project: example_switch
+target: example_switch
+
+type: executable
+
+sources: {
+    main.c
+}
+
+depends: {
+    MikroSDK.Board
+    MikroSDK.Driver
+    MikroC.Core
+    MikroSDK.Log
+    MikroSDK.Driver.GPIO.In
+    MikroSDK.Driver.GPIO.Out
+}

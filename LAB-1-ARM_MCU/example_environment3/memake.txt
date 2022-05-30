@@ -1,0 +1,26 @@
+type: executable
+target: example_environment3
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    environment3.c
+    main.c
+}
+
+headers: {
+    environment3.h
+}
+
+include: {
+    ./
+}
+
+
+
+

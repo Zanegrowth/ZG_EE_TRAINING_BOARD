@@ -1,0 +1,23 @@
+:: Base project template
+
+:: project: blinking
+target: blinking
+
+type: executable
+
+sources: {
+    main.c
+}
+
+headers: {
+    board.h
+    mcu_card.h
+    mikrobus.h
+}
+
+depends: {
+    MikroC.System
+    MikroC.UART
+    MikroC.Peripheral_Pin_Select
+    MikroC.PS2
+}

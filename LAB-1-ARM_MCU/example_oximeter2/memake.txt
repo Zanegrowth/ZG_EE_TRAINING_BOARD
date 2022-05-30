@@ -1,0 +1,21 @@
+type: executable
+target: example_oximeter2
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    main.c
+    oximeter2.c
+}
+
+headers: {
+    oximeter2.h
+}
+
+
+

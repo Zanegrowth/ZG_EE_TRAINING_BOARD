@@ -1,0 +1,119 @@
+{
+    "active.profile.index": 0,
+    "profiles": [
+        {
+            "boarddef.name": "generic dsPIC board",
+            "boarddef.uid": "generic dsPIC board",
+            "build.settings": {
+                "actions": {
+                    "build": {
+                        "steps": [
+                            {
+                                "class_name": "ProjectManagerModule::MeMakeStep",
+                                "value": {
+                                    "arguments": "--build all",
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    },
+                    "clean": {
+                        "steps": [
+                            {
+                                "class_name": "ProjectManagerModule::MeMakeStep",
+                                "value": {
+                                    "arguments": "--clean",
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                "memake.settings": {
+                    "BOARD_NAME": "BOARD_EASYPIC_V7_FOR_DSPIC30",
+                    "MEMAKE_SDK_TYPE": "legacy"
+                },
+                "output_path": "../build-blinking-pic33ep512mu814"
+            },
+            "devices": [
+            ],
+            "is_debug_build": false,
+            "mcu.settings": {
+                "mcu.settings.path": "PIC33EP512MU814.json",
+                "name": "PIC33EP512MU814"
+            },
+            "mikrosdk.settings": {
+                "uid": "sdk.mikroc.legacy.dspic"
+            },
+            "name": "[generic dsPIC board][PIC33EP512MU814][No display][7.1.0][codegrip]",
+            "programator.settings": {
+                "hardware_debuger": {
+                    "name": "codegrip",
+                    "settings": {
+                        "auto_start_local_gdb": true,
+                        "control_port": "1235",
+                        "ip_address": "127.0.0.1",
+                        "port": "1234",
+                        "remote_addresses": [
+                        ],
+                        "remote_password": "",
+                        "selected_device": {
+                            "communicationType": "usb",
+                            "deviceName": "CODEGRIP",
+                            "hwTokens": "",
+                            "ip": "8.176.75.152",
+                            "linkPortConfig": 0,
+                            "linkPortDebug": 0,
+                            "pid": 6436,
+                            "port": 0,
+                            "portConfig": 0,
+                            "registeredDevice": 0,
+                            "serialNumber": "ME2021225110003",
+                            "signalStrength": -1957,
+                            "sslEnable": true
+                        },
+                        "selected_options": {
+                            "Erase Type": {
+                                "group": "Target Operation",
+                                "value": "Mass erase"
+                            },
+                            "Programming Type": {
+                                "group": "Target Connection",
+                                "value": "Vdd first entry mode"
+                            },
+                            "Protocol": {
+                                "group": "Target Connection",
+                                "value": "ICSP"
+                            },
+                            "Speed": {
+                                "group": "Target Connection",
+                                "value": "4 MHz"
+                            },
+                            "Verify Type": {
+                                "group": "Target Operation",
+                                "value": "Readback"
+                            },
+                            "Verify after Write": {
+                                "group": "Target Operation",
+                                "value": "Enabled"
+                            }
+                        }
+                    }
+                },
+                "software_debuger": {
+                    "name": "prog_debug_sim",
+                    "settings": {
+                    }
+                }
+            },
+            "setup": {
+                "uid": "0aa6c84f-a582-4f3f-9c66-b4e43dfba004"
+            },
+            "target_index": 0,
+            "toolchain.settings": {
+                "id": "mikrocdspic"
+            }
+        }
+    ],
+    "version": 3
+}

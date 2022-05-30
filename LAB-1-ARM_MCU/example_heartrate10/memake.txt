@@ -1,0 +1,21 @@
+type: executable
+target: example_heartrate10
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    heartrate10.c
+    main.c
+}
+
+headers: {
+    heartrate10.h
+}
+
+
+

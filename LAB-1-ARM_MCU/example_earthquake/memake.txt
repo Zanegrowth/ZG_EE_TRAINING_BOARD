@@ -1,0 +1,21 @@
+type: executable
+target: example_earthquake
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    earthquake.c
+    main.c
+}
+
+headers: {
+    earthquake.h
+}
+
+
+

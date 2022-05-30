@@ -1,0 +1,29 @@
+:: Base project template
+
+:: project: example_hello_world
+target: example_hello_world
+
+
+depends: {
+    MikroC.System
+    MikroC.UART
+    MikroC.Peripheral_Pin_Select
+    MikroC.PS2
+}
+
+type: executable
+
+sources: {
+    main.c
+}
+
+headers: {
+
+}
+
+include: {
+    ./
+}
+
+
+

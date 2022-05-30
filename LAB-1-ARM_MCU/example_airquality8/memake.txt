@@ -1,0 +1,26 @@
+type: executable
+target: example_airquality8
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    airquality8.c
+    main.c
+}
+
+headers: {
+    airquality8.h
+}
+
+include: {
+    ./
+}
+
+
+
+
