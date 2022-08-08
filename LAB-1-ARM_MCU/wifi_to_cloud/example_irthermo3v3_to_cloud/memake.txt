@@ -1,0 +1,23 @@
+type: executable
+target: example_irthermo3v3
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    irthermo3v3.c
+    main.c
+    wifi_to_platform.c
+}
+
+headers: {
+    irthermo3v3.h
+    wifi_to_platform.h
+}
+
+
+

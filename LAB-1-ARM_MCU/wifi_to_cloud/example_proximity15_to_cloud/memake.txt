@@ -1,0 +1,23 @@
+type: executable
+target: example_proximity15
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    main.c
+    proximity15.c
+    wifi_to_platform.c
+}
+
+headers: {
+    proximity15.h
+    wifi_to_platform.h
+}
+
+
+

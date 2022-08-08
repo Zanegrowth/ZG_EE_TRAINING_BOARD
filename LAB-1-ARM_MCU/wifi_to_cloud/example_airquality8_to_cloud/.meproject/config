@@ -1,0 +1,138 @@
+{
+    "active.profile.index": 0,
+    "profiles": [
+        {
+            "boarddef.name": "Fusion for ARM v8",
+            "boarddef.uid": "Fusion for ARM v8",
+            "build.settings": {
+                "actions": {
+                    "build": {
+                        "steps": [
+                            {
+                                "class_name": "ProjectManagerModule::MeMakeStep",
+                                "value": {
+                                    "arguments": "--build all",
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    },
+                    "clean": {
+                        "steps": [
+                            {
+                                "class_name": "ProjectManagerModule::MeMakeStep",
+                                "value": {
+                                    "arguments": "--clean",
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                "memake.settings": {
+                    "BOARD_NAME": "BOARD_FUSION_FOR_ARM_V8",
+                    "MCU_CARD_NAME": "MCU_CARD_FOR_STM32",
+                    "MEMAKE_CORE_NAME": "M4EF",
+                    "MEMAKE_MCU_NAME": "STM32F407ZG",
+                    "MEMAKE_SDK_TYPE": "normal",
+                    "MSDK_HAL_LOW_LEVEL_TARGET": "mikroe",
+                    "MSDK_PACKAGE_NAME": "Tx",
+                    "MSDK_TFT_HEIGHT": "240",
+                    "MSDK_TFT_TP": "__TP_FT5XX6__",
+                    "MSDK_TFT_TYPE": "__TFT_CAPACITIVE__",
+                    "MSDK_TFT_WIDTH": "320"
+                },
+                "output_path": "../build-example_airquality8_-stm32f407zg"
+            },
+            "devices": [
+            ],
+            "display.height": "240",
+            "display.width": "320",
+            "is_debug_build": false,
+            "mcu.settings": {
+                "mcu.settings.path": "STM32F407ZG.json",
+                "name": "STM32F407ZG"
+            },
+            "mikrosdk.settings": {
+                "uid": "{93492de2-069f-4573-b150-9080e2a575cb}"
+            },
+            "name": "[Fusion for ARM v8][STM32F407ZG][TFT BOARD 3 CAPACITIVE][2.5.1][codegrip]",
+            "programator.settings": {
+                "hardware_debuger": {
+                    "name": "codegrip",
+                    "settings": {
+                        "auto_start_local_gdb": true,
+                        "control_port": "1235",
+                        "ip_address": "127.0.0.1",
+                        "port": "1234",
+                        "remote_addresses": [
+                        ],
+                        "remote_password": "",
+                        "selected_device": {
+                            "communicationType": "usb",
+                            "deviceName": "CODEGRIP",
+                            "hwTokens": "",
+                            "ip": "9.92.91.152",
+                            "linkPortConfig": 0,
+                            "linkPortDebug": 0,
+                            "pid": 6436,
+                            "port": 0,
+                            "portConfig": 0,
+                            "registeredDevice": 0,
+                            "serialNumber": "ME2021214850008",
+                            "signalStrength": -1957,
+                            "sslEnable": true
+                        },
+                        "selected_options": {
+                            "Connection": {
+                                "group": "Target Connection",
+                                "value": "Normal"
+                            },
+                            "Erase Type": {
+                                "group": "Target Operation",
+                                "value": "Sector erase"
+                            },
+                            "Halt on Connect": {
+                                "group": "Target Connection",
+                                "value": "Disabled"
+                            },
+                            "Protocol": {
+                                "group": "Target Connection",
+                                "value": "SWD"
+                            },
+                            "Reset Type": {
+                                "group": "Target Connection",
+                                "value": "Hardware reset"
+                            },
+                            "Speed": {
+                                "group": "Target Connection",
+                                "value": "4 MHz"
+                            },
+                            "Verify Type": {
+                                "group": "Target Operation",
+                                "value": "CRC"
+                            },
+                            "Verify after Write": {
+                                "group": "Target Operation",
+                                "value": "Enabled"
+                            }
+                        }
+                    }
+                },
+                "software_debuger": {
+                    "name": "prog_debug_sim",
+                    "settings": {
+                    }
+                }
+            },
+            "setup": {
+                "uid": "1a161ba3-cc35-46a0-b0eb-cb30e91f99b1"
+            },
+            "target_index": 0,
+            "toolchain.settings": {
+                "id": "mikrocarm"
+            }
+        }
+    ],
+    "version": 3
+}

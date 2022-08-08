@@ -1,0 +1,23 @@
+type: executable
+target: example_hallcurrent4
+
+depends: {
+    MikroC.Core
+    MikroSDK.Board
+    MikroSDK.Log
+    MikroSDK.Driver
+}
+
+sources: {
+    hallcurrent4.c
+    main.c
+    wifi_to_platform.c
+}
+
+headers: {
+    hallcurrent4.h
+    wifi_to_platform.h
+}
+
+
+
