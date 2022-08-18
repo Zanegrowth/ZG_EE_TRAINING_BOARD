@@ -99,7 +99,7 @@ void oximeter2_logs_results( void )
     }
     log_printf( &logger, "Average result, in percentage: %u\r\n", ( uint16_t )final_result );
     log_printf( &logger, "-------------------------\r\n" );
-    
+    oximeter_data.pulse = final_result;
     len_out = pack_sensors_data((uint8_t *)&oximeter_data, sizeof(oximeter_data), buf, 1);
     wifi_generic_write(&wifi, buf, len_out);
 
