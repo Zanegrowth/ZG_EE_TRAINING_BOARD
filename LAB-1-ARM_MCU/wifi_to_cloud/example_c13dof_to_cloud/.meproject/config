@@ -42,7 +42,7 @@
                     "MSDK_TFT_TYPE": "__TFT_CAPACITIVE__",
                     "MSDK_TFT_WIDTH": "320"
                 },
-                "output_path": "../build-example_c13dof-stm32f407zg"
+                "output_path": "../build-example_c13dof_to_cl-stm32f407zg"
             },
             "devices": [
             ],

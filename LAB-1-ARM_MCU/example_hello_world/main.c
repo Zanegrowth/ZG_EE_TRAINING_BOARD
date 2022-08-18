@@ -1,45 +1,43 @@
-/**
- * @file main.c
- * @brief MikroSDK base application.
- */
-
 #include "board.h"
-#include "log.h"
+#include "drv_uart.h"
 #include "string.h"
 
-static log_t logger;
 
-/// @todo Include wanted Driver headers to use.
-/// @example
-///     #include "drv_digital_out.h"
+uart_t uart;
 
-/// @todo Define Driver objects.
-/// @example
-///     static digital_out_t led_pin;
+char uart_rx_buffer[ 1024 ];
+char uart_tx_buffer[ 1024 ];
 
-/// @brief Application init function.
+
 void application_init()
 {
-    /// @todo Initialize Driver objects.
-    /// @example
-    ///     digital_out_init(&led_pin, LED1);
+    uart_config_t uart_cfg;
+    
+    //uart_configure_default( &uart_cfg );
+    
+    /*UART module config*/
+    uart_cfg.rx_pin = USB_UART_RX;  // UART RX pin. 
+    uart_cfg.tx_pin = USB_UART_TX;  // UART TX pin. 
+    uart_cfg.tx_ring_size = sizeof( uart_tx_buffer );  
+    uart_cfg.rx_ring_size = sizeof( uart_tx_buffer );
 
-    log_cfg_t log_cfg;
-    LOG_MAP_USB_UART( log_cfg );
-    log_init( &logger, &log_cfg );
-    log_info( &logger, "---- Application Init ----" );
+    uart_open( &uart, &uart_cfg );
+    uart_set_baud( &uart, 115200);
+    uart_set_parity( &uart, UART_PARITY_DEFAULT);
+    uart_set_stop_bits( &uart, UART_STOP_BITS_DEFAULT);  
+    uart_set_data_bits( &uart, UART_DATA_BITS_DEFAULT);
+
+    uart_set_blocking( &uart, false);
+
 }
 
-/// @brief Application task.
+
 void application_task()
 {
-    /// @todo Implement your application code here.
-    /// @example
-    ///     digital_out_toggle(&led_pin);
-    
-    log_info( &logger, "Hello world");
+
+    char buf[32] = "Hello world";
+    uart_write( &uart, buf, strlen(buf));
     Delay_ms(1000);
-     
      
 }
 
